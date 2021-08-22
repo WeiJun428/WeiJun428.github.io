@@ -1,2 +1,2 @@
 # WeiJun428.io
-My personal portfolio
+My personal portfolio.

@@ -1,0 +1,24 @@
+html {
+  scroll-padding-top: 10%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+  background-color: #FFCA3A;
+}
+
+img {
+  width: min(35vw, 230px);
+  height: 100%;
+  border-radius: 50%;
+  margin: 1em;
+  flex-shrink: 0;
+}

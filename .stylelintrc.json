@@ -1,0 +1,4 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "ignoreFiles": ["build/static/css/main.073c9b0a.css"]
+}

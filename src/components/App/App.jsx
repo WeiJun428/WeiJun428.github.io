@@ -1,6 +1,7 @@
 import React from "react";
-import AppBar from "../NavBar/NavBar";
+
 import About from "../About/About";
+import AppBar from "../NavBar/NavBar";
 
 function App() {
   return (

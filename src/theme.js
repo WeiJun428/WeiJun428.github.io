@@ -5,19 +5,7 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     bgcolor: "rgba(249, 250, 251, 0.7)",
-    // mode: "dark",
   },
-  // palette: {
-  // primary: {
-  //   main: red[700],
-  // },
-  // secondary: {
-  //   main: red[400],
-  // },
-  // error: {
-  //   main: red.A400,
-  // },
-  // },
   typography: {
     h1: {
       fontFamily: ["Playfair Display"],

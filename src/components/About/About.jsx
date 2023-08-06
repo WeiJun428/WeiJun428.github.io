@@ -1,52 +1,25 @@
 import React from "react";
 
-import {
-  Card,
-  CardContent,
-  CardMedia,
-  Box,
-  Typography,
-  Avatar,
-} from "@mui/material";
-
-import ProfilePicture from "../../img/profile.jpg";
+import { Card, CardContent, Typography } from "@mui/material";
 
 const paragraphs = [
-  "Meet Wei Jun, a tech enthusiast who thrives on excitement and innovation! With a passion cultivated through hackathons, coding contests, open-source contributions, Wei Jun's journey has been nothing short of thrilling. As a versatile freelancer and intern, they've honed their skills while crafting impactful projects. From solving captivating problems, big or small, he finds pure joy in the world of technology! 🚀",
+  "Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, a start-up, a student-led design studio, and a huge corporation.",
+  "My main focus these days is building products and leading projects for our clients at Upstatement. In my free time I've also released an online video course that covers everything you need to know to build a web app with the Spotify API.",
+  "When I’m not at the computer, I’m usually rock climbing, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds",
 ];
 
 function About() {
   return (
-    <Card sx={{ display: "flex", padding: "2rem" }}>
-      <Box sx={{ display: "flex", alignItems: "center", marginRight: "2rem" }}>
-        <CardMedia>
-          <Avatar
-            alt="Remy Sharp"
-            src={ProfilePicture}
-            sx={{ width: 250, height: 250 }}
-          />
-        </CardMedia>
-      </Box>
-      <Box sx={{ display: "flex", flexDirection: "column" }}>
-        <CardContent sx={{ flex: "1 0 auto" }}>
-          <Typography component="div" variant="h1">
-            Wei Jun Tan
+    <Card sx={{ display: "flex", padding: "2rem", flexDirection: "column" }}>
+      <CardContent
+        sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}
+      >
+        {paragraphs.map((p) => (
+          <Typography variant="body1" component="div" key={p}>
+            {p}
           </Typography>
-          <Typography
-            variant="subtitle1"
-            color="text.secondary"
-            component="div"
-            sx={{ mb: "1rem" }}
-          >
-            BS Computer Science and Statistics @University of Washington
-          </Typography>
-          {paragraphs.map((paragraph) => (
-            <Typography key={paragraph} variant="body1" component="div">
-              {paragraph}
-            </Typography>
-          ))}
-        </CardContent>
-      </Box>
+        ))}
+      </CardContent>
     </Card>
   );
 }

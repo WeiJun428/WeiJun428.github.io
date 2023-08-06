@@ -59,7 +59,6 @@ function Experience() {
     <Box
       sx={{
         display: "flex",
-        padding: "2rem",
         gap: "2rem",
         flex: "1 8",
         flexDirection: "column",

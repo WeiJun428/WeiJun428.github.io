@@ -15,6 +15,32 @@ const theme = createTheme({
     },
   },
   typography: {
+    h1: {
+      fontFamily: ["Playfair Display"],
+      fontWeight: 700,
+      fontSize: "3rem",
+    },
+    h2: {
+      fontFamily: ["Playfair Display"],
+      fontWeight: 700,
+      fontSize: "1.5rem",
+    },
+    h3: {
+      fontFamily: ["Playfair Display"],
+      fontWeight: 600,
+    },
+    h4: {
+      fontFamily: ["Playfair Display"],
+      fontWeight: 600,
+    },
+    h5: {
+      fontFamily: ["Playfair Display"],
+      fontWeight: 600,
+    },
+    h6: {
+      fontFamily: ["Playfair Display"],
+      fontWeight: 600,
+    },
     fontFamily: [
       "-apple-system",
       "BlinkMacSystemFont",

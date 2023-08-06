@@ -23,7 +23,7 @@ function Header() {
         display: "flex",
         padding: "2rem",
         flexDirection: "column",
-        top: 0,
+        top: "3rem",
         position: "sticky",
       }}
     >

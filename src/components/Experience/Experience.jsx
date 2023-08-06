@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Card, Box, CardContent, Typography } from "@mui/material";
+import { Card, Box, CardContent, Typography, Stack, Chip } from "@mui/material";
 
 const experience = [
   {
@@ -9,6 +9,7 @@ const experience = [
     description: [
       "Created a drag-and-drop wizard that allows client to configure and visualize cluster architecture in ReactJS",
     ],
+    skills: ["React", "JavaScript", "Ant Design", "Less.js", "Flask"],
   },
   {
     time: "Sep 2022 - June 2023",
@@ -17,13 +18,39 @@ const experience = [
     description: [
       "Answered 100+ students’ inquiries in visualization design, D3.js, P5.js, Tableau, and Vega-Lite on discussion board",
     ],
+    skills: ["D3.js", "P5.js", "Vega-Lite", "Tableau", "JavaScript", "Python"],
   },
   {
     time: "Sep 2021 - June 2023",
     title: "Developer - Impact++",
     description: [
-      "Created and published a Google Sheet extension to streamline the process of uploading new forms to ODK Central",
+      "Created and published a Google Sheet add-on to streamline the process of uploading new forms to ODK Central",
     ],
+    skills: ["JavaScript", "TypeScript", "Azure", "ESLint"],
+  },
+  {
+    time: "June 2022 - Sep 2022",
+    title: "Software Engineering (AI/ML) Intern - AkiraKan",
+    description: [
+      "Built a Python package that monitors the 3D object detection pipelines on edge device using ZeroMQ sockets",
+    ],
+    skills: ["C++", "Python", "Tensorflow", "Flatbuffers", "ZeroMQ", "Docker"],
+  },
+  {
+    time: "Oct 2021 - Dec 2021",
+    title: "Freelance Software Developer - Educoo",
+    description: [
+      "Built a native desktop application to help non-tech-savvy educators manage and browse teaching materials",
+    ],
+    skills: ["Electron.js", "Node.js", "Bootstrap"],
+  },
+  {
+    time: "Mar 2019 - Apr 2019",
+    title: "Project Intern - Sedania Innovator Berhad",
+    description: [
+      "Examined the authenticity of financing document using Google Cloud Vision OCR API",
+    ],
+    skills: ["Python", "Marvel"],
   },
 ];
 
@@ -68,6 +95,13 @@ function Experience() {
                 >
                   {item.description}
                 </Typography>
+              </CardContent>
+              <CardContent>
+                <Stack direction="row" spacing={1}>
+                  {item.skills.map((skill) => {
+                    return <Chip label={skill} color="primary" key={skill} />;
+                  })}
+                </Stack>
               </CardContent>
             </Box>
           </Card>

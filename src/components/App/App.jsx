@@ -4,24 +4,24 @@ import { Box } from "@mui/material";
 
 import About from "../About/About";
 import Experience from "../Experience/Experience";
-import AppBar from "../NavBar/NavBar";
 
 function App() {
   return (
-    <div className="app">
-      <AppBar />
+    <Box className="app" sx={{ bgcolor: "bgcolor" }}>
       <Box
         sx={{
-          padding: "3rem 15vw",
+          padding: "3rem 10vw",
           display: "flex",
           flexDirection: "column",
           gap: 10,
         }}
       >
         <About />
-        <Experience />
+        <Box>
+          <Experience />
+        </Box>
       </Box>
-    </div>
+    </Box>
   );
 }
 

@@ -9,29 +9,29 @@ const theme = createTheme({
   typography: {
     h1: {
       fontFamily: ["Playfair Display"],
-      fontWeight: 700,
+      fontWeight: 800,
       fontSize: "3rem",
     },
     h2: {
       fontFamily: ["Playfair Display"],
-      fontWeight: 700,
-      fontSize: "1.5rem",
+      fontWeight: 800,
+      fontSize: "1rem",
     },
     h3: {
       fontFamily: ["Playfair Display"],
-      fontWeight: 600,
+      fontWeight: 800,
     },
     h4: {
       fontFamily: ["Playfair Display"],
-      fontWeight: 600,
+      fontWeight: 800,
     },
     h5: {
       fontFamily: ["Playfair Display"],
-      fontWeight: 600,
+      fontWeight: 800,
     },
     h6: {
       fontFamily: ["Playfair Display"],
-      fontWeight: 600,
+      fontWeight: 800,
     },
     fontFamily: [
       "-apple-system",

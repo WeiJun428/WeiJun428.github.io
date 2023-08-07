@@ -1,22 +1,17 @@
 import React from "react";
 
-import ArticleIcon from "@mui/icons-material/Article";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import MailIcon from "@mui/icons-material/Mail";
-import {
-  Card,
-  CardContent,
-  Typography,
-  IconButton,
-  ButtonGroup,
-} from "@mui/material";
+import { Card, CardContent, Typography } from "@mui/material";
+
+import Contact from "./Contact";
+import useHover from "../../hooks/useHover";
 
 const paragraphs = [
   "Tech enthusiast who loves full-stack development, systems programming, and data visualization",
 ];
 
 function Header() {
+  const { isHovered, handleMouseEnter, handleMouseLeave } = useHover();
+
   return (
     <Card
       sx={{
@@ -25,10 +20,18 @@ function Header() {
         flexDirection: "column",
         top: "3rem",
         position: "sticky",
+        boxShadow: isHovered ? null : "none",
+        bgcolor: isHovered ? null : "bgcolor",
       }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <CardContent>
-        <Typography component="div" variant="h1">
+        <Typography
+          component="div"
+          variant="h1"
+          sx={{ color: isHovered ? "primary.main" : null }}
+        >
           Wei Jun Tan
         </Typography>
         <Typography
@@ -37,28 +40,14 @@ function Header() {
           component="div"
           sx={{ mb: "1rem" }}
         >
-          B.S. Computer Science and Statistics at <br /> University of
-          Washington
+          B.S. Computer Science and Statistics at University of Washington
         </Typography>
         {paragraphs.map((paragraph) => (
           <Typography key={paragraph} variant="subtitle2" component="div">
             {paragraph}
           </Typography>
         ))}
-        <ButtonGroup variant="outlined">
-          <IconButton>
-            <MailIcon />
-          </IconButton>
-          <IconButton>
-            <LinkedInIcon />
-          </IconButton>
-          <IconButton>
-            <GitHubIcon />
-          </IconButton>
-          <IconButton>
-            <ArticleIcon />
-          </IconButton>
-        </ButtonGroup>
+        <Contact />
       </CardContent>
     </Card>
   );

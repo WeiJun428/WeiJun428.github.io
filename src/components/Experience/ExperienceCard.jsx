@@ -3,13 +3,29 @@ import React from "react";
 import { Card, Box, CardContent, Typography, Chip } from "@mui/material";
 import PropTypes from "prop-types";
 
+import useHover from "../../hooks/useHover";
+
 function ExperienceCard({ item }) {
+  const { isHovered, handleMouseEnter, handleMouseLeave } = useHover();
+
   return (
-    <Card sx={{ display: "flex" }} key={item.title}>
+    <Card
+      sx={{
+        display: "flex",
+        boxShadow: isHovered ? null : "none",
+        bgcolor: isHovered ? null : "bgcolor",
+      }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <CardContent
-        sx={{ display: "flex", alignItems: "flex-start", width: 3 / 10 }}
+        sx={{
+          display: "flex",
+          alignItems: "flex-start",
+          width: 3 / 10,
+        }}
       >
-        <Typography component="div" variant="subtitle2" variantMapping="body1">
+        <Typography component="div" variant="subtitle2">
           {item.time}
         </Typography>
       </CardContent>
@@ -22,7 +38,11 @@ function ExperienceCard({ item }) {
         }}
       >
         <CardContent sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-          <Typography component="div" variant="h2">
+          <Typography
+            component="div"
+            variant="h2"
+            sx={{ color: isHovered ? "primary.main" : null }}
+          >
             {item.title}
           </Typography>
           <Typography variant="body2" color="text.secondary" component="div">
@@ -43,7 +63,7 @@ function ExperienceCard({ item }) {
                   variant="outlined"
                   key={skill}
                   size="small"
-                  color="primary"
+                  color={isHovered ? "primary" : "default"}
                 />
               );
             })}

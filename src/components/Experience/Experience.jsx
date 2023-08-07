@@ -9,7 +9,7 @@ const experience = [
     time: "June 2023 - Present",
     title: "Software Defined Networking Intern - Nutanix",
     description: [
-      "Created a drag-and-drop wizard that allows client to configure and visualize cluster architecture in ReactJS; Led a frontend team of 5 to create a security dashboard during week-long intern hackathon",
+      "Created a drag-and-drop wizard that allows client to configure and visualize cloud cluster architecture",
     ],
     skills: [
       "React",
@@ -25,7 +25,7 @@ const experience = [
     title:
       "Undergraduate Teaching Assistant - Paul G. Allen School of Computer Science and Engineering",
     description: [
-      "Collaborate with 6+ TAs to teach and grade a data visualization class of 130+ students for three quarters; answered more than 100 inquiries in visualization design on discussion board",
+      "Collaborate with 6+ TAs to teach and grade a data visualization class of 130+ students for 3 quarters",
     ],
     skills: ["D3.js", "P5.js", "Vega-Lite", "Tableau", "JavaScript", "Python"],
   },
@@ -33,7 +33,7 @@ const experience = [
     time: "Sep 2021 - June 2023",
     title: "Developer - Impact++",
     description: [
-      "Created and published a Google Sheet add-on to streamline the process of uploading new forms to ODK Central; made 8 individual contribution to Azure JavaScript SDK",
+      "Created and published a Google Sheet add-on to streamline the process of uploading new forms to ODK Central",
     ],
     skills: ["JavaScript", "TypeScript", "Apps Script", "Azure", "ESLint"],
   },
@@ -41,7 +41,7 @@ const experience = [
     time: "June 2022 - Sep 2022",
     title: "Software Engineering (AI/ML) Intern - AkiraKan",
     description: [
-      "Built a Python package that monitors the 3D object detection pipelines on edge device using ZeroMQ sockets; accelerated the inference of deep learning model by 2x through migrating to self-compiled TensorFlow C++ API",
+      "Accelerated the inference of deep learning model by 2x through migrating to self-compiled TensorFlow C++ API",
     ],
     skills: ["C++", "Python", "Tensorflow", "Flatbuffers", "ZeroMQ", "Docker"],
   },

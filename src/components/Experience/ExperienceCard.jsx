@@ -13,7 +13,7 @@ function ExperienceCard({ item }) {
       sx={{
         display: "flex",
         boxShadow: isHovered ? null : "none",
-        bgcolor: isHovered ? null : "bgcolor",
+        bgcolor: isHovered ? null : "background.default",
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

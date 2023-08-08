@@ -24,6 +24,7 @@ const project = [
 function Project() {
   return (
     <Box
+      id="project"
       sx={{
         display: "flex",
         flexDirection: "column",

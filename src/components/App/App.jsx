@@ -5,6 +5,7 @@ import { Box } from "@mui/material";
 import About from "../About/About";
 import Experience from "../Experience/Experience";
 import Header from "../Header/Header";
+import Nav from "../Nav/Nav";
 import Project from "../Project/Project";
 
 function App() {
@@ -18,8 +19,16 @@ function App() {
       }}
     >
       <Box sx={{ display: "flex", flexDirection: "horizontal" }}>
-        <Box sx={{ width: 2 / 5 }}>
+        <Box
+          sx={{
+            width: 2 / 5,
+            position: "sticky",
+            top: "3rem",
+            height: "80vh",
+          }}
+        >
           <Header />
+          <Nav />
         </Box>
         <Box sx={{ width: 3 / 5, px: "2rem" }}>
           <main>

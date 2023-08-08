@@ -14,8 +14,6 @@ function Header() {
         display: "flex",
         padding: "2rem",
         flexDirection: "column",
-        top: "3rem",
-        position: "sticky",
         boxShadow: isHovered ? null : "none",
         bgcolor: isHovered ? null : "background.default",
       }}

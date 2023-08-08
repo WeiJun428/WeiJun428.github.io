@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box } from "@mui/material";
+import { Box, Link, Typography } from "@mui/material";
 
 import ExperienceCard from "./ExperienceCard";
 
@@ -77,12 +77,15 @@ function Experience() {
         display: "flex",
         flexDirection: "column",
         gap: 5,
-        my: 5,
+        my: 10,
       }}
     >
       {experience.map((item) => {
         return <ExperienceCard item={item} key={item.title} />;
       })}
+      <Link href="." underline="hover" sx={{ pl: 2 }}>
+        <Typography variant="h2">View full résumé here</Typography>
+      </Link>
     </Box>
   );
 }

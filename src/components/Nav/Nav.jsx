@@ -1,16 +1,10 @@
 import * as React from "react";
 
-import { Box, Card, CardContent, Typography } from "@mui/material";
+import { Box, Card, CardContent } from "@mui/material";
 import LinkTab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 
 import useHover from "../../hooks/useHover";
-
-const paragraph = [
-  "Learn more about who Wei Jun is!",
-  "What is he working on now?",
-  "What he have built?",
-];
 
 export default function VerticalTabs() {
   const [value, setValue] = React.useState(0);
@@ -78,16 +72,6 @@ export default function VerticalTabs() {
             <LinkTab label="Experience" href="#experience" />
             <LinkTab label="Project" href="#project" />
           </Tabs>
-          <Box sx={{ p: "1rem" }}>
-            <Typography
-              variant="body1"
-              component="div"
-              color="text.secondary"
-              paragraph
-            >
-              {paragraph[value]}
-            </Typography>
-          </Box>
         </Box>
       </CardContent>
     </Card>

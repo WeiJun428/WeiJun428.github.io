@@ -1,15 +1,30 @@
 import React from "react";
 
-import { Card, Box, CardContent, Typography, Chip, Link } from "@mui/material";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import {
+  Card,
+  Box,
+  CardContent,
+  Typography,
+  Chip,
+  Link,
+  Slide,
+  Fade,
+} from "@mui/material";
 import PropTypes from "prop-types";
 
 import useHover from "../../hooks/useHover";
 
 function ExperienceCard({ item }) {
   const { isHovered, handleMouseEnter, handleMouseLeave } = useHover();
+  const headerRef = React.useRef(null);
 
   return (
-    <Link href={item.link} underline="none" target="_blank">
+    <Link
+      href={item.link}
+      underline="none"
+      target={item.link === "#" ? "_self" : "_blank"}
+    >
       <Card
         sx={{
           display: "flex",
@@ -45,8 +60,18 @@ function ExperienceCard({ item }) {
               component="div"
               variant="h2"
               sx={{ color: isHovered ? "primary.main" : null }}
+              ref={headerRef}
             >
               {item.title}
+              <Fade in={isHovered}>
+                <Slide
+                  in={isHovered}
+                  direction="up"
+                  container={headerRef.current}
+                >
+                  <ArrowOutwardIcon fontSize="small" sx={{ ml: 1 }} />
+                </Slide>
+              </Fade>
             </Typography>
             <Typography variant="body2" color="text.secondary" component="div">
               {item.description}

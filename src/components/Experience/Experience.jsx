@@ -19,6 +19,7 @@ const experience = [
       "Less.js",
       "Flask",
     ],
+    link: "https://www.nutanix.com/",
   },
   {
     time: "Sep 2022 - June 2023",
@@ -28,6 +29,7 @@ const experience = [
       "Collaborate with 6+ TAs to teach and grade a data visualization class of 130+ students for 3 quarters",
     ],
     skills: ["D3.js", "P5.js", "Vega-Lite", "Tableau", "JavaScript", "Python"],
+    link: "https://www.cs.washington.edu/",
   },
   {
     time: "Sep 2021 - June 2023",
@@ -36,6 +38,7 @@ const experience = [
       "Created and published a Google Sheet add-on to streamline the process of uploading new forms to ODK Central",
     ],
     skills: ["JavaScript", "TypeScript", "Apps Script", "Azure", "ESLint"],
+    link: "https://udubimpact.weebly.com/",
   },
   {
     time: "June 2022 - Sep 2022",
@@ -44,6 +47,7 @@ const experience = [
       "Accelerated the inference of deep learning model by 2x through migrating to self-compiled TensorFlow C++ API",
     ],
     skills: ["C++", "Python", "Tensorflow", "Flatbuffers", "ZeroMQ", "Docker"],
+    link: "https://www.akirakan.com/",
   },
   {
     time: "Oct 2021 - Dec 2021",
@@ -52,6 +56,7 @@ const experience = [
       "Built a desktop application to help non-tech-savvy educators manage and browse teaching materials",
     ],
     skills: ["Electron.js", "Node.js", "jQuery", "Bootstrap"],
+    link: "#",
   },
   {
     time: "Mar 2019 - Apr 2019",
@@ -60,6 +65,7 @@ const experience = [
       "Examined the authenticity of financing document using Google Cloud Vision OCR API",
     ],
     skills: ["Python", "Marvel"],
+    link: "https://www.sedaniainnovator.com/",
   },
 ];
 

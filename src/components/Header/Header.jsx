@@ -37,8 +37,8 @@ function Header() {
           B.S. Computer Science and Statistics at University of Washington
         </Typography>
         <Typography variant="subtitle2" component="div" sx={{ mb: "1rem" }}>
-          Tech enthusiast who loves full-stack development, systems programming,
-          and machine learning
+          Tech enthusiast who is passionate about full-stack development,
+          systems programming, and machine learning
         </Typography>
         <Contact />
       </CardContent>

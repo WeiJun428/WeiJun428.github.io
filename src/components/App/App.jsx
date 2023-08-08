@@ -32,9 +32,15 @@ function App() {
         </Box>
         <Box sx={{ width: 3 / 5, px: "2rem" }}>
           <main>
-            <About />
-            <Experience />
-            <Project />
+            <section>
+              <About />
+            </section>
+            <section>
+              <Experience />
+            </section>
+            <section>
+              <Project />
+            </section>
           </main>
         </Box>
       </Box>

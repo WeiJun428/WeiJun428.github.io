@@ -41,7 +41,7 @@
     "deploy": "gh-pages -d build",
     "lint": "npm run eslint && npm run stylelint && npm run format",
     "eslint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0 --fix",
-    "stylelint": "stylelint \"**/*.css\" --fix",
+    "stylelint": "stylelint \"src/**/*.css\" --fix",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}'"
   },
   "eslintConfig": {

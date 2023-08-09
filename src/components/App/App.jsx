@@ -4,6 +4,7 @@ import { Box } from "@mui/material";
 
 import About from "../About/About";
 import Experience from "../Experience/Experience";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Nav from "../Nav/Nav";
 import Project from "../Project/Project";
@@ -42,6 +43,9 @@ function App() {
               <Project />
             </section>
           </main>
+          <footer>
+            <Footer />
+          </footer>
         </Box>
       </Box>
     </Box>

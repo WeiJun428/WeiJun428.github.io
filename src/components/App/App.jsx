@@ -13,25 +13,61 @@ function App() {
   return (
     <Box
       sx={{
-        p: "3rem 10vw",
-        display: "flex",
-        flexDirection: "column",
-        gap: 10,
+        py: "3rem",
+        px: {
+          xs: "1.5rem",
+          sm: "3rem",
+          md: "6rem",
+        },
       }}
     >
-      <Box sx={{ display: "flex", flexDirection: "horizontal" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: {
+            xs: "column",
+            md: "row",
+          },
+        }}
+      >
         <Box
           sx={{
-            width: 2 / 5,
-            position: "sticky",
-            top: "3rem",
-            height: "80vh",
+            width: {
+              xs: 1,
+              md: 2 / 5,
+            },
+            position: {
+              xs: "static",
+              md: "sticky",
+            },
+            top: {
+              xs: "auto",
+              md: "3rem",
+            },
+            height: "fit-content",
           }}
         >
           <Header />
-          <Nav />
+          <Box
+            sx={{
+              display: {
+                xs: "none",
+                md: "block",
+              },
+            }}
+          >
+            <Nav />
+          </Box>
         </Box>
-        <Box sx={{ width: 3 / 5, px: "2rem" }}>
+        <Box
+          sx={{
+            width: {
+              xs: 1,
+              md: 3 / 5,
+            },
+            px: "2rem",
+          }}
+        >
           <main>
             <section>
               <About />

@@ -1,14 +1,23 @@
 import * as React from "react";
 
-import { Box, Card, CardContent } from "@mui/material";
-import LinkTab from "@mui/material/Tab";
-import Tabs from "@mui/material/Tabs";
+import StarIcon from "@mui/icons-material/Star";
+import {
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  Link,
+  ListItemIcon,
+} from "@mui/material";
 
-import useHover from "../../hooks/useHover";
+const content = [
+  { label: "About", link: "#about" },
+  { label: "Experience", link: "#experience" },
+  { label: "Project", link: "#project" },
+];
 
 export default function VerticalTabs() {
   const [value, setValue] = React.useState(0);
-  const { isHovered, handleMouseEnter, handleMouseLeave } = useHover();
   const isScrolling = React.useRef(false);
   const timeOutId = React.useRef(null);
 
@@ -39,7 +48,7 @@ export default function VerticalTabs() {
     };
   }, []);
 
-  const handleChange = (event, newValue) => {
+  const handleClick = (newValue) => {
     setValue(newValue);
     if (timeOutId.current) {
       clearTimeout(timeOutId.current);
@@ -51,29 +60,43 @@ export default function VerticalTabs() {
   };
 
   return (
-    <Card
-      sx={{
-        boxShadow: isHovered ? null : "none",
-        bgcolor: isHovered ? null : "background.default",
-        py: 0,
-      }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      <CardContent>
-        <Box sx={{ display: "flex" }}>
-          <Tabs
-            orientation="vertical"
-            value={value}
-            onChange={handleChange}
-            sx={{ width: 130, m: 0 }}
+    <List sx={{ mx: "3rem", textAlign: "left" }}>
+      {content.map((c, i) => {
+        const selected = value === i;
+        return (
+          <Link
+            href={c.link}
+            key={c.label}
+            underline="none"
+            sx={{ color: selected ? "primary" : "text.secondary" }}
           >
-            <LinkTab label="About" href="#about" />
-            <LinkTab label="Experience" href="#experience" />
-            <LinkTab label="Project" href="#project" />
-          </Tabs>
-        </Box>
-      </CardContent>
-    </Card>
+            <ListItem disablePadding>
+              <ListItemButton
+                selected={selected}
+                onClick={() => handleClick(i)}
+              >
+                <ListItemIcon>
+                  <StarIcon sx={{ display: selected ? null : "none" }} />
+                </ListItemIcon>
+                <ListItemText primary={c.label} />
+              </ListItemButton>
+            </ListItem>
+          </Link>
+        );
+      })}
+    </List>
   );
+
+  // return (
+  //   <Tabs
+  //     orientation="vertical"
+  //     value={value}
+  //     onChange={handleChange}
+  //     sx={{ width: 130, m: 0, textAlign: "left" }}
+  //   >
+  //     <LinkTab label="About" href="#about" />
+  //     <LinkTab label="Experience" href="#experience" />
+  //     <LinkTab label="Project" href="#project" />
+  //   </Tabs>
+  // );
 }

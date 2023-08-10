@@ -1,14 +1,8 @@
 import * as React from "react";
 
-import StarIcon from "@mui/icons-material/Star";
-import {
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
-  Link,
-  ListItemIcon,
-} from "@mui/material";
+import { Box } from "@mui/material";
+
+import NavItem from "./NavItem";
 
 const content = [
   { label: "About", link: "#about" },
@@ -16,7 +10,7 @@ const content = [
   { label: "Project", link: "#project" },
 ];
 
-export default function VerticalTabs() {
+export default function Nav() {
   const [value, setValue] = React.useState(0);
   const isScrolling = React.useRef(false);
   const timeOutId = React.useRef(null);
@@ -60,43 +54,24 @@ export default function VerticalTabs() {
   };
 
   return (
-    <List sx={{ mx: "3rem", textAlign: "left" }}>
+    <Box
+      sx={{
+        width: "fit-content",
+        mx: "3rem",
+        mt: "3rem",
+        textAlign: "left",
+      }}
+    >
       {content.map((c, i) => {
-        const selected = value === i;
         return (
-          <Link
-            href={c.link}
+          <NavItem
+            content={c}
+            onClick={() => handleClick(i)}
+            selected={value === i}
             key={c.label}
-            underline="none"
-            sx={{ color: selected ? "primary" : "text.secondary" }}
-          >
-            <ListItem disablePadding>
-              <ListItemButton
-                selected={selected}
-                onClick={() => handleClick(i)}
-              >
-                <ListItemIcon>
-                  <StarIcon sx={{ display: selected ? null : "none" }} />
-                </ListItemIcon>
-                <ListItemText primary={c.label} />
-              </ListItemButton>
-            </ListItem>
-          </Link>
+          />
         );
       })}
-    </List>
+    </Box>
   );
-
-  // return (
-  //   <Tabs
-  //     orientation="vertical"
-  //     value={value}
-  //     onChange={handleChange}
-  //     sx={{ width: 130, m: 0, textAlign: "left" }}
-  //   >
-  //     <LinkTab label="About" href="#about" />
-  //     <LinkTab label="Experience" href="#experience" />
-  //     <LinkTab label="Project" href="#project" />
-  //   </Tabs>
-  // );
 }

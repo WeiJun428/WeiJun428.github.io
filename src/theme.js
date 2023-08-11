@@ -1,4 +1,4 @@
-// import { red } from "@mui/material/colors";
+import { red } from "@mui/material/colors";
 import { createTheme } from "@mui/material/styles";
 
 // A custom theme for this app
@@ -8,6 +8,9 @@ const theme = (mode) => {
       mode,
       background: {
         default: mode === "light" ? "rgba(249, 250, 251, 0.7)" : "#000",
+      },
+      primary: {
+        main: mode === "light" ? red[700] : red[300],
       },
     },
     typography: {

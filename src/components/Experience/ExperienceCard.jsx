@@ -42,7 +42,8 @@ function ExperienceCard({ item }) {
           sx={{
             display: "flex",
             alignItems: "flex-start",
-            width: {xs: 1, md: 3 / 10},
+            width: { xs: 1, md: 3 / 10 },
+            pb: { xs: 0, md: null },
           }}
         >
           <Typography component="div" variant="subtitle2">
@@ -54,7 +55,7 @@ function ExperienceCard({ item }) {
             display: "flex",
             alignItems: "flex-start",
             flexDirection: "column",
-            width: {xs: 1, md: 7 / 10},
+            width: { xs: 1, md: 7 / 10 },
           }}
         >
           <CardContent

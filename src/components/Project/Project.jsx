@@ -111,6 +111,7 @@ function Project() {
         gap: 5,
         my: 5,
       }}
+      component="section"
     >
       {project.map((item) => {
         return <ExperienceCard item={item} key={item.title} />;

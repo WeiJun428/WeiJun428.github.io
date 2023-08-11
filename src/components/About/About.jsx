@@ -96,6 +96,7 @@ function About() {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
       id="about"
+      component="section"
     >
       <CardContent
         sx={{

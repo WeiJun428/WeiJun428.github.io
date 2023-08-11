@@ -71,19 +71,11 @@ function App() {
           }}
         >
           <main>
-            <section>
-              <About />
-            </section>
-            <section>
-              <Experience />
-            </section>
-            <section>
-              <Project />
-            </section>
+            <About />
+            <Experience />
+            <Project />
           </main>
-          <footer>
-            <Footer />
-          </footer>
+          <Footer />
         </Box>
       </Box>
     </Box>

@@ -87,6 +87,7 @@ function Experience() {
         gap: 5,
         my: 10,
       }}
+      component="section"
     >
       {experience.map((item) => {
         return <ExperienceCard item={item} key={item.title} />;

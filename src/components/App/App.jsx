@@ -45,6 +45,8 @@ function App() {
               md: "3rem",
             },
             height: "fit-content",
+            mb: "3rem",
+            px: "1rem",
           }}
         >
           <Header />
@@ -65,7 +67,7 @@ function App() {
               xs: 1,
               md: 3 / 5,
             },
-            px: "2rem",
+            px: "1rem",
           }}
         >
           <main>

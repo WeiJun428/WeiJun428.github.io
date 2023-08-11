@@ -30,6 +30,10 @@ function ExperienceCard({ item }) {
           display: "flex",
           boxShadow: isHovered ? null : "none",
           bgcolor: isHovered ? null : "background.default",
+          flexDirection: {
+            xs: "column",
+            md: "row",
+          },
         }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
@@ -38,7 +42,7 @@ function ExperienceCard({ item }) {
           sx={{
             display: "flex",
             alignItems: "flex-start",
-            width: 3 / 10,
+            width: {xs: 1, md: 3 / 10},
           }}
         >
           <Typography component="div" variant="subtitle2">
@@ -50,7 +54,7 @@ function ExperienceCard({ item }) {
             display: "flex",
             alignItems: "flex-start",
             flexDirection: "column",
-            width: 7 / 10,
+            width: {xs: 1, md: 7 / 10},
           }}
         >
           <CardContent

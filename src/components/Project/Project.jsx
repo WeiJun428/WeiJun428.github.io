@@ -30,6 +30,24 @@ const project = [
     link: "https://courses.cs.washington.edu/courses/cse493v/23sp/public/report_17/index.html",
   },
   {
+    time: "Dec 2022",
+    title: "Text Summarizer",
+    description: [
+      "Train a deep learning model to automatically generate summaries for text documents.",
+    ],
+    skills: ["PyTorch", "GRU", "Deep Learning"],
+    link: "https://weijun428.github.io/text-summarizer/",
+  },
+  {
+    time: "Oct 2022",
+    title: "Aidhere",
+    description: [
+      "Implement a MVP mobile application that helps people in emergency to seek help from nearby certified first responder in DubHacks",
+    ],
+    skills: ["Java", "Android Studio", "Google Maps", "Figma"],
+    link: "https://devpost.com/software/aidhere",
+  },
+  {
     time: "Mar 2022 - June 2022",
     title: "xk Operating System",
     description: [
@@ -48,6 +66,15 @@ const project = [
     link: "https://cse442-22w.github.io/FP-codeforces/",
   },
   {
+    time: "Jan 2022 - Mar 2022",
+    title: "Remind",
+    description: [
+      "Created a reminder app with alarm and emergency calls that aims to help people with Alzheimer",
+    ],
+    skills: ["Java", "Android Studio"],
+    link: "https://courses.cs.washington.edu/courses/cse340/22wi/assignments/final-project.html",
+  },
+  {
     time: "Mar 2022 - June 2022",
     title: "Vaccine Scheduler",
     description: ["Invented an CLI vaccination appointment scheduler"],
@@ -62,6 +89,15 @@ const project = [
     ],
     skills: ["C++", "Socket programming", "HTTP", "Boost"],
     link: "https://courses.cs.washington.edu/courses/cse333/21au/",
+  },
+  {
+    time: "June 2021 - Aug 2021",
+    title: "Campus Path",
+    description: [
+      "Built a MVC shortest-path wayfinding tool for UW school campus",
+    ],
+    skills: ["Java Spring", "TypeScript", "React", "Bootstrap"],
+    link: "https://courses.cs.washington.edu/courses/cse331/21su/hw/hw9/hw-campuspaths.html",
   },
 ];
 

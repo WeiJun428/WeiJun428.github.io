@@ -28,7 +28,15 @@ const experience = [
     description: [
       "Collaborate with 6+ TAs to teach and grade a data visualization class of 130+ students for 3 quarters",
     ],
-    skills: ["D3.js", "P5.js", "Vega-Lite", "Tableau", "JavaScript", "Python"],
+    skills: [
+      "D3.js",
+      "P5.js",
+      "Vega-Lite",
+      "Tableau",
+      "JavaScript",
+      "Python",
+      "Observable",
+    ],
     link: "https://www.cs.washington.edu/",
   },
   {

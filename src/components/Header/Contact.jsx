@@ -30,7 +30,11 @@ function Contact() {
     <ButtonGroup variant="outlined">
       {data.map((d) => {
         return (
-          <Link href={d.link} key={d.link}>
+          <Link
+            href={d.link}
+            key={d.link}
+            target={d.link.startsWith("https") ? "_blank" : "_self"}
+          >
             <IconButton
               sx={{
                 "&:hover": {

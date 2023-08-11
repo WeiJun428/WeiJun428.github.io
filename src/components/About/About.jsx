@@ -74,7 +74,13 @@ const highlightParagraph = (paragraph, isHovered) => {
 };
 
 function About() {
-  const { isHovered, handleMouseEnter, handleMouseLeave } = useHover();
+  const {
+    isHovered,
+    handleMouseEnter,
+    handleMouseLeave,
+    handleTouchStart,
+    handleTouchEnd,
+  } = useHover();
 
   return (
     <Card
@@ -87,6 +93,8 @@ function About() {
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
       id="about"
     >
       <CardContent

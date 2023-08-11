@@ -16,7 +16,13 @@ import PropTypes from "prop-types";
 import useHover from "../../hooks/useHover";
 
 function ExperienceCard({ item }) {
-  const { isHovered, handleMouseEnter, handleMouseLeave } = useHover();
+  const {
+    isHovered,
+    handleMouseEnter,
+    handleMouseLeave,
+    handleTouchStart,
+    handleTouchEnd,
+  } = useHover();
   const headerRef = React.useRef(null);
 
   return (
@@ -37,6 +43,8 @@ function ExperienceCard({ item }) {
         }}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
       >
         <CardContent
           sx={{

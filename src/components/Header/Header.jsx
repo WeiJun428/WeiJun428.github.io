@@ -6,7 +6,13 @@ import Contact from "./Contact";
 import useHover from "../../hooks/useHover";
 
 function Header() {
-  const { isHovered, handleMouseEnter, handleMouseLeave } = useHover();
+  const {
+    isHovered,
+    handleMouseEnter,
+    handleMouseLeave,
+    handleTouchStart,
+    handleTouchEnd,
+  } = useHover();
 
   return (
     <Card
@@ -19,6 +25,8 @@ function Header() {
       }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       <CardContent sx={{ px: { xs: 0, md: "1rem" } }}>
         <Typography

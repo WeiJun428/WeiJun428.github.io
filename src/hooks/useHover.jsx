@@ -6,10 +6,14 @@ export default function useHover() {
 
   const handleMouseEnter = () => setIsHovered(true);
   const handleMouseLeave = () => setIsHovered(false);
+  const handleTouchStart = () => setIsHovered(true);
+  const handleTouchEnd = () => setIsHovered(false);
 
   return {
     isHovered,
     handleMouseEnter,
     handleMouseLeave,
+    handleTouchStart,
+    handleTouchEnd,
   };
 }

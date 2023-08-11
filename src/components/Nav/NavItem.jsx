@@ -6,7 +6,13 @@ import PropTypes from "prop-types";
 import useHover from "../../hooks/useHover";
 
 export default function NavItem({ content, onClick, selected }) {
-  const { isHovered, handleMouseEnter, handleMouseLeave } = useHover();
+  const {
+    isHovered,
+    handleMouseEnter,
+    handleMouseLeave,
+    handleTouchStart,
+    handleTouchEnd,
+  } = useHover();
   const active = isHovered || selected;
   return (
     <Link
@@ -16,6 +22,8 @@ export default function NavItem({ content, onClick, selected }) {
       sx={{ color: active ? "primary" : "text.secondary", my: "1rem" }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
       onClick={onClick}
     >
       <ListItemText primary={content.label} />

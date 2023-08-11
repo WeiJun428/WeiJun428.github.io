@@ -90,7 +90,12 @@ function About() {
       id="about"
     >
       <CardContent
-        sx={{ display: "flex", flexDirection: "column", gap: "1rem" }}
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: "1rem",
+          px: { xs: 0, md: "1rem" },
+        }}
       >
         {paragraphs.map((p) => (
           <Typography variant="body1" component="div" key={p} paragraph>

@@ -20,7 +20,7 @@ function Header() {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <CardContent>
+      <CardContent sx={{ px: { xs: 0, md: "1rem" } }}>
         <Typography
           component="div"
           variant="h1"

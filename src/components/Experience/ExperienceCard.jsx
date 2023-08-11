@@ -82,7 +82,13 @@ function ExperienceCard({ item }) {
                   direction="up"
                   container={headerRef.current}
                 >
-                  <ArrowOutwardIcon fontSize="small" sx={{ ml: 1 }} />
+                  <ArrowOutwardIcon
+                    fontSize="small"
+                    sx={{
+                      ml: 1,
+                      position: "absolute",
+                    }}
+                  />
                 </Slide>
               </Fade>
             </Typography>

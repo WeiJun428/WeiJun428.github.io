@@ -2,7 +2,7 @@ import { red } from "@mui/material/colors";
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
 // A custom theme for this app
-const theme = (mode) => {
+const getTheme = (mode) => {
   return responsiveFontSizes(
     createTheme({
       palette: {
@@ -58,4 +58,4 @@ const theme = (mode) => {
   );
 };
 
-export default theme;
+export default getTheme;

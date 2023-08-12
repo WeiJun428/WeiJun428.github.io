@@ -6,6 +6,8 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailIcon from "@mui/icons-material/Mail";
 import { IconButton, ButtonGroup, Link } from "@mui/material";
 
+import ThemeToggleButton from "../Theme/ThemeToggleButton";
+
 const data = [
   {
     link: "mailto:wj428@uw.edu",
@@ -47,6 +49,7 @@ function Contact() {
           </Link>
         );
       })}
+      <ThemeToggleButton />
     </ButtonGroup>
   );
 }

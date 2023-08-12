@@ -2,7 +2,7 @@ import React from "react";
 
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
-import { Box, IconButton, useTheme } from "@mui/material";
+import { Box, Fade, IconButton, useTheme } from "@mui/material";
 
 import ColorModeContext from "./ThemeModeContext";
 import useHover from "../../hooks/useHover";
@@ -27,7 +27,7 @@ function ThemeToggleButton() {
       }
       timeOutId.current = setTimeout(() => {
         setIsVisble(true);
-      }, 1000);
+      }, 200);
     } else {
       if (timeOutId.current) {
         clearTimeout(timeOutId.current);
@@ -40,28 +40,28 @@ function ThemeToggleButton() {
 
   return (
     <Box
+      ariaLabel="hidden theme toggle"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      <IconButton
-        onClick={colorMode.toggleThemeMode}
-        sx={{
-          visibility: isVisible ? "visible" : "hidden",
-          opacity: isVisible ? 1 : 0,
-          "&:hover": {
-            color: "primary.main",
-          },
-          transition: "opacity 500ms",
-        }}
-      >
-        {theme.palette.mode === "dark" ? (
-          <Brightness7Icon />
-        ) : (
-          <Brightness4Icon />
-        )}
-      </IconButton>
+      <Fade in={isVisible}>
+        <IconButton
+          onClick={colorMode.toggleThemeMode}
+          sx={{
+            "&:hover": {
+              color: "primary.main",
+            },
+          }}
+        >
+          {theme.palette.mode === "dark" ? (
+            <Brightness7Icon />
+          ) : (
+            <Brightness4Icon />
+          )}
+        </IconButton>
+      </Fade>
     </Box>
   );
 }

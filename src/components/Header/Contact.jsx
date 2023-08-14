@@ -22,7 +22,7 @@ const data = [
     icon: <GitHubIcon />,
   },
   {
-    link: "TODO: resume",
+    link: "/docs/resume.pdf",
     icon: <ArticleIcon />,
   },
 ];

@@ -92,7 +92,7 @@ function Experience() {
       {experience.map((item) => {
         return <ExperienceCard item={item} key={item.title} />;
       })}
-      <Link href="." underline="hover" sx={{ pl: 2 }}>
+      <Link href="/docs/resume.pdf" underline="hover" sx={{ pl: 2 }}>
         <Typography variant="h2">View full résumé here</Typography>
       </Link>
     </Box>

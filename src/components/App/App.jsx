@@ -13,70 +13,64 @@ function App() {
   return (
     <Box
       sx={{
-        py: "3rem",
+        py: 6,
         px: {
-          xs: "1.5rem",
-          sm: "3rem",
-          md: "6rem",
+          xs: 3,
+          sm: 6,
+          md: 12,
+          xl: 18,
+        },
+        display: "flex",
+        flexDirection: {
+          xs: "column",
+          md: "row",
         },
       }}
     >
       <Box
         sx={{
-          display: "flex",
-          flexDirection: {
-            xs: "column",
-            md: "row",
+          width: {
+            xs: 1,
+            md: 2 / 5,
           },
+          position: {
+            md: "sticky",
+          },
+          top: {
+            md: 6,
+          },
+          height: "fit-content",
+          mb: 6,
+          px: 2,
         }}
       >
+        <Header />
         <Box
           sx={{
-            width: {
-              xs: 1,
-              md: 2 / 5,
+            display: {
+              xs: "none",
+              md: "block",
             },
-            position: {
-              xs: "static",
-              md: "sticky",
-            },
-            top: {
-              xs: "auto",
-              md: "3rem",
-            },
-            height: "fit-content",
-            mb: "3rem",
-            px: "1rem",
           }}
         >
-          <Header />
-          <Box
-            sx={{
-              display: {
-                xs: "none",
-                md: "block",
-              },
-            }}
-          >
-            <Nav />
-          </Box>
+          <Nav />
         </Box>
-        <Box
-          sx={{
-            width: {
-              xs: 1,
-              md: 3 / 5,
-            },
-            px: "1rem",
-          }}
-        >
-          <main>
-            <About />
-            <Experience />
-            <Project />
-          </main>
-          <Footer />
-        </Box>
+      </Box>
+      <Box
+        sx={{
+          width: {
+            xs: 1,
+            md: 3 / 5,
+          },
+          px: 2,
+        }}
+      >
+        <main>
+          <About />
+          <Experience />
+          <Project />
+        </main>
+        <Footer />
       </Box>
     </Box>
   );

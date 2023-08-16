@@ -27,7 +27,7 @@ function Header() {
     <Card
       sx={{
         display: "flex",
-        padding: "2rem",
+        padding: 4,
         flexDirection: "column",
         boxShadow: isHovered ? null : "none",
         bgcolor: isHovered ? null : "background.default",
@@ -37,7 +37,7 @@ function Header() {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      <CardContent sx={{ px: { xs: 0, md: "1rem" } }}>
+      <CardContent sx={{ px: { xs: 0, md: 2 } }}>
         <Typography
           component="div"
           variant="h1"
@@ -49,11 +49,11 @@ function Header() {
           variant="subtitle1"
           color="text.secondary"
           component="div"
-          sx={{ mb: "1rem" }}
+          sx={{ mb: 2 }}
         >
           {subtitle}
         </Typography>
-        <Typography variant="subtitle2" component="div" sx={{ mb: "1rem" }}>
+        <Typography variant="subtitle2" component="div" sx={{ mb: 2 }}>
           {paragraph}
         </Typography>
         <Contact />

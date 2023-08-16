@@ -57,8 +57,8 @@ export default function Nav() {
     <Box
       sx={{
         width: "fit-content",
-        mx: "3rem",
-        mt: "3rem",
+        mx: 6,
+        mt: 6,
         textAlign: "left",
       }}
     >

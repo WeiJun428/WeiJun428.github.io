@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
 const breakpointTime = {
-  10: 150,
-  20: 300,
-  40: 600,
-  80: 800,
-  120: 1200,
+  10: 200,
+  20: 400,
+  40: 700,
+  80: 1000,
+  120: 1300,
 };
 
 const useTyping = ({ text, enabled = true } = {}) => {

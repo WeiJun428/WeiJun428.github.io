@@ -4,6 +4,13 @@ import { Card, CardContent, Typography } from "@mui/material";
 
 import Contact from "./Contact";
 import useHover from "../../hooks/useHover";
+import useTyping from "../../hooks/useTyping";
+
+const title = "Wei Jun Tan";
+const subtitle =
+  "B.S. Computer Science and Statistics at University of Washington";
+const paragraph =
+  "Tech enthusiast who is passionate about full-stack development, systems programming, and machine learning";
 
 function Header() {
   const {
@@ -13,6 +20,8 @@ function Header() {
     handleTouchStart,
     handleTouchEnd,
   } = useHover();
+
+  const currentTitle = useTyping({ text: title });
 
   return (
     <Card
@@ -34,7 +43,7 @@ function Header() {
           variant="h1"
           sx={{ color: isHovered ? "primary.main" : null }}
         >
-          Wei Jun Tan
+          {currentTitle}
         </Typography>
         <Typography
           variant="subtitle1"
@@ -42,11 +51,10 @@ function Header() {
           component="div"
           sx={{ mb: "1rem" }}
         >
-          B.S. Computer Science and Statistics at University of Washington
+          {subtitle}
         </Typography>
         <Typography variant="subtitle2" component="div" sx={{ mb: "1rem" }}>
-          Tech enthusiast who is passionate about full-stack development,
-          systems programming, and machine learning
+          {paragraph}
         </Typography>
         <Contact />
       </CardContent>

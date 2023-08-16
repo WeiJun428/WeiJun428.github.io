@@ -14,6 +14,8 @@ import {
 import PropTypes from "prop-types";
 
 import useHover from "../../hooks/useHover";
+import useIsVisibleOnce from "../../hooks/useIsVisibleOnce";
+import useTyping from "../../hooks/useTyping";
 
 function ExperienceCard({ item }) {
   const {
@@ -24,6 +26,8 @@ function ExperienceCard({ item }) {
     handleTouchEnd,
   } = useHover();
   const headerRef = React.useRef(null);
+  const isVisibleOnce = useIsVisibleOnce(headerRef);
+  const currentTitle = useTyping({ text: item.title, enabled: isVisibleOnce });
 
   return (
     <Link
@@ -75,7 +79,7 @@ function ExperienceCard({ item }) {
               sx={{ color: isHovered ? "primary.main" : null }}
               ref={headerRef}
             >
-              {item.title}
+              {currentTitle}
               <Fade in={isHovered}>
                 <Slide
                   in={isHovered}

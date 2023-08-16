@@ -37,7 +37,7 @@ function App() {
             md: "sticky",
           },
           top: {
-            md: 6,
+            md: "3rem",
           },
           height: "fit-content",
           mb: 6,

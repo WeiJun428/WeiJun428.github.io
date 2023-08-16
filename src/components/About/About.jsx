@@ -86,7 +86,7 @@ function About() {
     <Card
       sx={{
         display: "flex",
-        padding: "2rem",
+        p: 4,
         flexDirection: "column",
         boxShadow: isHovered ? null : "none",
         bgcolor: isHovered ? null : "background.default",

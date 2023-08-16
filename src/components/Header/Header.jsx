@@ -27,7 +27,7 @@ function Header() {
     <Card
       sx={{
         display: "flex",
-        padding: 4,
+        p: 4,
         flexDirection: "column",
         boxShadow: isHovered ? null : "none",
         bgcolor: isHovered ? null : "background.default",

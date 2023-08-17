@@ -1,6 +1,11 @@
 import { red } from "@mui/material/colors";
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
+const headerStyle = {
+  fontFamily: ["Playfair Display"],
+  fontWeight: 800,
+};
+
 // A custom theme for this app
 const getTheme = (mode) => {
   return responsiveFontSizes(
@@ -16,31 +21,17 @@ const getTheme = (mode) => {
       },
       typography: {
         h1: {
-          fontFamily: ["Playfair Display"],
-          fontWeight: 800,
+          ...headerStyle,
           fontSize: "3rem",
         },
         h2: {
-          fontFamily: ["Playfair Display"],
-          fontWeight: 800,
+          ...headerStyle,
           fontSize: "1rem",
         },
-        h3: {
-          fontFamily: ["Playfair Display"],
-          fontWeight: 800,
-        },
-        h4: {
-          fontFamily: ["Playfair Display"],
-          fontWeight: 800,
-        },
-        h5: {
-          fontFamily: ["Playfair Display"],
-          fontWeight: 800,
-        },
-        h6: {
-          fontFamily: ["Playfair Display"],
-          fontWeight: 800,
-        },
+        h3: headerStyle,
+        h4: headerStyle,
+        h5: headerStyle,
+        h6: headerStyle,
         fontFamily: [
           "-apple-system",
           "BlinkMacSystemFont",

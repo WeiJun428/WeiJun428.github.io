@@ -12,12 +12,25 @@ const getTheme = (mode) => {
     createTheme({
       palette: {
         mode,
-        background: {
-          default: mode === "light" ? "rgba(249, 250, 251, 0.7)" : "#000",
-        },
-        primary: {
-          main: mode === "light" ? red[700] : red[300],
-        },
+        ...(mode === "light"
+          ? {
+              background: {
+                default: "rgba(249, 250, 251, 0.7)",
+                paper: "#fff",
+              },
+              primary: {
+                main: red[700],
+              },
+            }
+          : {
+              background: {
+                default: "#121212",
+                paper: "#202020",
+              },
+              primary: {
+                main: red[300],
+              },
+            }),
       },
       typography: {
         h1: {
@@ -44,6 +57,11 @@ const getTheme = (mode) => {
           '"Segoe UI Emoji"',
           '"Segoe UI Symbol"',
         ].join(","),
+      },
+      components: {
+        MuiPaper: {
+          styleOverrides: { root: { backgroundImage: "unset" } },
+        },
       },
     }),
   );

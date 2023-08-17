@@ -1,10 +1,18 @@
 import React from "react";
 
-import { Card, CardContent, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+  useTheme,
+} from "@mui/material";
 
 import Contact from "./Contact";
 import useHover from "../../hooks/useHover";
 import useTyping from "../../hooks/useTyping";
+import favicon from "../../img/favicon.png";
 
 const title = "Wei Jun Tan";
 const subtitle =
@@ -20,7 +28,7 @@ function Header() {
     handleTouchStart,
     handleTouchEnd,
   } = useHover();
-
+  const theme = useTheme();
   const currentTitle = useTyping({ text: title });
 
   return (
@@ -38,13 +46,26 @@ function Header() {
       onTouchEnd={handleTouchEnd}
     >
       <CardContent sx={{ px: { xs: 0, md: 2 } }}>
-        <Typography
-          component="div"
-          variant="h1"
-          sx={{ color: isHovered ? "primary.main" : null }}
-        >
-          {currentTitle}
-        </Typography>
+        <Box sx={{ display: "flex", alignItems: "baseline", gap: 2 }}>
+          <Typography
+            component="div"
+            variant="h1"
+            sx={{ color: isHovered ? "primary.main" : null }}
+          >
+            {currentTitle}
+          </Typography>
+          <CardMedia
+            component="img"
+            image={favicon}
+            alt="Paella dish"
+            sx={{
+              width: 28,
+              height: 28,
+              display: isHovered ? "auto" : "none",
+              opacity: theme.palette.mode === "light" ? 1 : 0.7,
+            }}
+          />
+        </Box>
         <Typography
           variant="subtitle1"
           color="text.secondary"

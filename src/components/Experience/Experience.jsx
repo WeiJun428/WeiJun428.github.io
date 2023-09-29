@@ -6,27 +6,11 @@ import ExperienceCard from "./ExperienceCard";
 
 const experience = [
   {
-    time: "June 2023 - Present",
-    title: "Software Defined Networking Intern - Nutanix",
-    description: [
-      "Created a drag-and-drop wizard that allows client to configure and visualize cloud cluster architecture",
-    ],
-    skills: [
-      "React",
-      "React Flow",
-      "JavaScript",
-      "Ant Design",
-      "Less.js",
-      "Flask",
-    ],
-    link: "https://www.nutanix.com/",
-  },
-  {
-    time: "Sep 2022 - June 2023",
+    time: "Sep 2022 - Current",
     title:
       "Undergraduate Teaching Assistant - Paul G. Allen School of Computer Science and Engineering",
     description: [
-      "Collaborate with 6+ TAs to teach and grade a data visualization class of 130+ students for 3 quarters",
+      "Collaborate with 7+ TAs to teach and grade a data visualization class of 130+ students for 4 quarters",
     ],
     skills: [
       "D3.js",
@@ -37,7 +21,23 @@ const experience = [
       "Python",
       "Observable",
     ],
-    link: "https://www.cs.washington.edu/",
+    link: "https://courses.cs.washington.edu/courses/cse442/",
+  },
+  {
+    time: "June 2023 - Sep 2023",
+    title: "Software Defined Networking Intern - Nutanix",
+    description: [
+      "Created a drag-and-drop wizard that allows client to configure and visualize cloud cluster architecture",
+    ],
+    skills: [
+      "React.js",
+      "React Flow",
+      "JavaScript",
+      "Ant Design",
+      "LESS",
+      "Flask",
+    ],
+    link: "https://www.nutanix.com/",
   },
   {
     time: "Sep 2021 - June 2023",

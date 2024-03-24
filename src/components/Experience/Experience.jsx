@@ -6,21 +6,32 @@ import ExperienceCard from "./ExperienceCard";
 
 const experience = [
   {
+    time: "Sep 2023 - Current",
+    title: "Undergraduate Research Assistant - Daffodil Messenger",
+    description: [
+      "Develop a social messaging platform and research online conflict behaviors in a team of 3",
+    ],
+    skills: ["React.js", "Firebase", "Bootstrap"],
+    link: "https://www.amandabaughan.com/",
+  },
+  {
+    time: "Mar 2023 - Current",
+    title:
+      "Undergraduate Research Assistant - WhaleVis and Graph Systems Survey",
+    description: [
+      "Developed an interactive International Whale Catch dashboard; construct a benchmark of interactive visual graph analysis workflows",
+    ],
+    skills: ["D3.js", "Node.js", "Python"],
+    link: "https://arxiv.org/abs/2308.04552",
+  },
+  {
     time: "Sep 2022 - Current",
     title:
       "Undergraduate Teaching Assistant - Paul G. Allen School of Computer Science and Engineering",
     description: [
-      "Collaborate with 7+ TAs to teach and grade a data visualization class of 130+ students for 4 quarters",
+      "Assist instruction of Data Visualization (4), Data Structures and Algorithms (1), and Browser Engineering (1) for 6 quarters",
     ],
-    skills: [
-      "D3.js",
-      "P5.js",
-      "Vega-Lite",
-      "Tableau",
-      "JavaScript",
-      "Python",
-      "Observable",
-    ],
+    skills: ["D3.js", "Vega-Lite", "Tableau", "Python", "Java"],
     link: "https://courses.cs.washington.edu/courses/cse442/",
   },
   {

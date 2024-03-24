@@ -9,7 +9,7 @@ const project = [
     time: "July 2023 - Present",
     title: "Personal Website",
     description: [
-      "Created a personal website entailed recent employment, achievements, and projects hosted on GitHub Pages",
+      "Created and maintain a personal website entailed recent employment, achievements, and projects hosted on GitHub Pages",
     ],
     skills: [
       "React",
@@ -18,6 +18,24 @@ const project = [
       "MUI System",
       "Github Pages",
     ],
+    link: "#",
+  },
+  {
+    time: "Jan 2024 - Mar 2024",
+    title: "Simple DB",
+    description: [
+      "Implemented a simple database with features such as catelog, buffer pool, operators, concurrent transactions, rollback, and recovery",
+    ],
+    skills: ["Java", "SQL"],
+    link: "#",
+  },
+  {
+    time: "Sep 2023 - Dec 2023",
+    title: "Welp",
+    description: [
+      "Developed and evaluated the performance of a Yelp-like restaurant microservice",
+    ],
+    skills: ["Go", "Python", "Docker", "Kubernetes", "gRPC"],
     link: "#",
   },
   {

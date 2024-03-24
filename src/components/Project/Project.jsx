@@ -72,7 +72,7 @@ const project = [
       "Implemented syscalls on an OS with a crash-safe file system for multiple processes to CRUD files concurrently",
     ],
     skills: ["C", "QEMU", "GDB", "Operating System"],
-    link: "https://courses.cs.washington.edu/courses/cse451/22sp/index.html",
+    link: "https://courses.cs.washington.edu/courses/cse451/22sp",
   },
   {
     time: "Jan 2022 - Mar 2022",

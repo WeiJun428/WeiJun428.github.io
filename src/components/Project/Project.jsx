@@ -27,7 +27,7 @@ const project = [
       "Implemented a simple database with features such as catalog, buffer pool, operators, concurrent transactions, rollback, and recovery",
     ],
     skills: ["Java", "SQL"],
-    link: "#",
+    link: "https://courses.cs.washington.edu/courses/cse444/24wi/",
   },
   {
     time: "Sep 2023 - Dec 2023",
@@ -36,7 +36,7 @@ const project = [
       "Developed and evaluated the performance of a Yelp-like restaurant microservice",
     ],
     skills: ["Go", "Python", "Docker", "Kubernetes", "gRPC"],
-    link: "#",
+    link: "https://courses.cs.washington.edu/courses/cse453/23au/",
   },
   {
     time: "May 2023 - June 2023",

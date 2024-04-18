@@ -24,7 +24,7 @@ const project = [
     time: "Jan 2024 - Mar 2024",
     title: "Simple DB",
     description: [
-      "Implemented a simple database with features such as catelog, buffer pool, operators, concurrent transactions, rollback, and recovery",
+      "Implemented a simple database with features such as catalog, buffer pool, operators, concurrent transactions, rollback, and recovery",
     ],
     skills: ["Java", "SQL"],
     link: "#",

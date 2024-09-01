@@ -10,7 +10,7 @@ function Footer() {
       component="footer"
       sx={{ pl: 2 }}
     >
-      Designed by Wei Jun Tan. Built with React and MUI. &copy; 2023
+      Designed by Wei Jun Tan. Built with React and MUI. &copy; 2024
     </Typography>
   );
 }

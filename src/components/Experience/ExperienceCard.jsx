@@ -29,6 +29,9 @@ function ExperienceCard({ item }) {
   const isVisibleOnce = useIsVisibleOnce(headerRef);
   const currentTitle = useTyping({ text: item.title, enabled: isVisibleOnce });
 
+  // Only show arrow after title animation completes
+  const showArrow = isHovered && currentTitle === item.title;
+
   return (
     <Link
       href={item.link}
@@ -80,9 +83,9 @@ function ExperienceCard({ item }) {
               ref={headerRef}
             >
               {currentTitle}
-              <Fade in={isHovered}>
+              <Fade in={showArrow}>
                 <Slide
-                  in={isHovered}
+                  in={showArrow}
                   direction="up"
                   container={headerRef.current}
                 >

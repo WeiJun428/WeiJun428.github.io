@@ -37,10 +37,7 @@ function Contact() {
       {data.map((d) => {
         return (
           <Tooltip title={d.label} key={d.link}>
-            <Link
-              href={d.link}
-              target={d.link.startsWith("https") ? "_blank" : "_self"}
-            >
+            <Link href={d.link} target="_blank">
               <IconButton
                 sx={{
                   "&:hover": {

@@ -16,7 +16,7 @@ import favicon from "../../img/favicon.png";
 
 const title = "Wei Jun Tan";
 const subtitle =
-  "B.S. Computer Science and Statistics at University of Washington";
+  "M.S. in Computer Science and Engineering at University of Washington";
 const paragraph =
   "Tech enthusiast who is passionate about full-stack development, systems programming, and machine learning";
 

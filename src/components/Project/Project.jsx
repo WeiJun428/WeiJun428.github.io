@@ -4,7 +4,30 @@ import { Box } from "@mui/material";
 
 import ExperienceCard from "../Experience/ExperienceCard";
 
+// DSlabs | Distributed System (Mar 2024 – Current)
+// Create a sharded key-value store with multi-key updates backed with multi-slot Paxos algorithm in Java
+// CourseKata Analysis | DataFest UW 2024 (Mar 2024)
+// Analyzed CourseKata’s data and employed random forest to provide business insights that improve student’s learning experience using R, Python and Tableau in a team of 3; won the Best in Show award.
+
 const project = [
+  {
+    time: "Mar 2024 - June 2024",
+    title: "DSlabs",
+    description: [
+      "Create a sharded key-value store with multi-key updates backed with multi-slot Paxos algorithm",
+    ],
+    skills: ["Java"],
+    link: "https://courses.cs.washington.edu/courses/cse452/24sp/",
+  },
+  {
+    time: "Mar 2024",
+    title: "CourseKata Analysis",
+    description: [
+      "Provide business insights for improving learning experience using random forest in a team of 3; won the Datafest Best in Show award.",
+    ],
+    skills: ["R", "Python", "Tableau"],
+    link: "https://stat.uw.edu/datafest-2024",
+  },
   {
     time: "July 2023 - Present",
     title: "Personal Website",

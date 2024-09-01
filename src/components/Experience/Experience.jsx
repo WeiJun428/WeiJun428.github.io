@@ -6,33 +6,41 @@ import ExperienceCard from "./ExperienceCard";
 
 const experience = [
   {
-    time: "Sep 2023 - Current",
-    title: "Undergraduate Research Assistant - Daffodil Messenger",
+    time: "June 2024 - Current",
+    title: "Software Engineering Intern - Databricks",
     description: [
-      "Develop a social messaging platform and research online conflict behaviors in a team of 3",
+      "Build a prober that validate clean room service availability across regions. Onboard view as a new asset in clean room",
     ],
-    skills: ["React.js", "Firebase", "Bootstrap"],
-    link: "https://www.amandabaughan.com/",
+    skills: ["Scala", "Terraform", "Typescript"],
+    link: "https://idl.uw.edu/",
   },
   {
     time: "Mar 2023 - Current",
-    title:
-      "Undergraduate Research Assistant - WhaleVis and Graph Systems Survey",
+    title: "Research Assistant - Interactive Data Lab",
     description: [
-      "Developed an interactive International Whale Catch dashboard; construct a benchmark of interactive visual graph analysis workflows",
+      "Construct a benchmark of interactive visual graph analysis workflows. Developed an interactive International Whale Catch dashboard",
     ],
-    skills: ["D3.js", "Node.js", "Python"],
-    link: "https://arxiv.org/abs/2308.04552",
+    skills: ["D3.js", "Node.js", "Python", "Java"],
+    link: "https://idl.uw.edu/",
   },
   {
     time: "Sep 2022 - Current",
     title:
-      "Undergraduate Teaching Assistant - Paul G. Allen School of Computer Science and Engineering",
+      "Teaching Assistant - Paul G. Allen School of Computer Science and Engineering",
     description: [
-      "Assist instruction of Data Visualization (4), Data Structures and Algorithms (1), and Browser Engineering (1) for 6 quarters",
+      "Assist instruction of Data Visualization (4), Data Structures and Algorithms (1), Browser Engineering (1), and Computer Communication Networks (1) for 7 quarters",
     ],
     skills: ["D3.js", "Vega-Lite", "Tableau", "Python", "Java"],
     link: "https://courses.cs.washington.edu/courses/cse442/",
+  },
+  {
+    time: "Sep 2023 - June 2024",
+    title: "Undergraduate Research Assistant - User Empowerment Lab",
+    description: [
+      "Develop a social messaging platform and research online conflict behaviors in a team of 3",
+    ],
+    skills: ["React.js", "Firebase", "Bootstrap"],
+    link: "https://www.userempowerment.org/",
   },
   {
     time: "June 2023 - Sep 2023",

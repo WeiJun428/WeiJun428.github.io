@@ -12,7 +12,7 @@ const experience = [
       "Build a prober that validate clean room service availability across regions. Onboard view as a new asset in clean room",
     ],
     skills: ["Scala", "Terraform", "Typescript"],
-    link: "https://idl.uw.edu/",
+    link: "https://www.databricks.com/",
   },
   {
     time: "Mar 2023 - Current",

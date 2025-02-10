@@ -28,7 +28,7 @@ const experience = [
     time: "June 2024 - Sep 2024",
     title: "Software Engineering Intern - Databricks",
     description: [
-      "Build a prober that validate clean room service availability across regions. Onboard view as a new asset in clean room",
+      "Built a prober that validate clean room service availability across regions. Onboarded view as a new asset in clean room",
     ],
     skills: ["Scala", "Typescript", "Terraform"],
     link: "https://www.databricks.com/",
@@ -37,7 +37,7 @@ const experience = [
     time: "Sep 2023 - June 2024",
     title: "Undergraduate Research Assistant - User Empowerment Lab",
     description: [
-      "Develop a social messaging platform and research online conflict behaviors in a team of 3",
+      "Developed a social messaging platform and research online conflict behaviors in a team of 3",
     ],
     skills: ["React.js", "Firebase", "Bootstrap"],
     link: "https://www.userempowerment.org/",

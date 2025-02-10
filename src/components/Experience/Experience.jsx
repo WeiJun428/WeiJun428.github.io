@@ -6,21 +6,12 @@ import ExperienceCard from "./ExperienceCard";
 
 const experience = [
   {
-    time: "June 2024 - Current",
-    title: "Software Engineering Intern - Databricks",
-    description: [
-      "Build a prober that validate clean room service availability across regions. Onboard view as a new asset in clean room",
-    ],
-    skills: ["Scala", "Terraform", "Typescript"],
-    link: "https://www.databricks.com/",
-  },
-  {
     time: "Mar 2023 - Current",
     title: "Research Assistant - Interactive Data Lab",
     description: [
       "Construct a benchmark of interactive visual graph analysis workflows. Developed an interactive International Whale Catch dashboard",
     ],
-    skills: ["D3.js", "Node.js", "Python", "Java"],
+    skills: ["Python", "Java", "D3.js"],
     link: "https://idl.uw.edu/",
   },
   {
@@ -28,10 +19,19 @@ const experience = [
     title:
       "Teaching Assistant - Paul G. Allen School of Computer Science and Engineering",
     description: [
-      "Assist instruction of Data Visualization (4), Data Structures and Algorithms (1), Browser Engineering (1), and Computer Communication Networks (1) for 7 quarters",
+      "Assist instruction of Data Visualization (4), Data Structures and Algorithms (1), Browser Engineering (1), and Computer Communication Networks (2) for 8 quarters",
     ],
-    skills: ["D3.js", "Vega-Lite", "Tableau", "Python", "Java"],
+    skills: ["Python", "Java", "D3.js"],
     link: "https://courses.cs.washington.edu/courses/cse442/",
+  },
+  {
+    time: "June 2024 - Sep 2024",
+    title: "Software Engineering Intern - Databricks",
+    description: [
+      "Build a prober that validate clean room service availability across regions. Onboard view as a new asset in clean room",
+    ],
+    skills: ["Scala", "Typescript", "Terraform"],
+    link: "https://www.databricks.com/",
   },
   {
     time: "Sep 2023 - June 2024",
@@ -48,14 +48,7 @@ const experience = [
     description: [
       "Created a drag-and-drop wizard that allows client to configure and visualize cloud cluster architecture",
     ],
-    skills: [
-      "React.js",
-      "React Flow",
-      "JavaScript",
-      "Ant Design",
-      "LESS",
-      "Flask",
-    ],
+    skills: ["React.js", "Flask", "Ant Design"],
     link: "https://www.nutanix.com/",
   },
   {
@@ -64,7 +57,7 @@ const experience = [
     description: [
       "Created and published a Google Sheet add-on to streamline the process of uploading new forms to ODK Central",
     ],
-    skills: ["JavaScript", "TypeScript", "Apps Script", "Azure", "ESLint"],
+    skills: ["TypeScript", "Apps Script", "Azure"],
     link: "https://udubimpact.weebly.com/",
   },
   {
@@ -73,7 +66,7 @@ const experience = [
     description: [
       "Accelerated the inference of deep learning model by 2x through migrating to self-compiled TensorFlow C++ API",
     ],
-    skills: ["C++", "Python", "Tensorflow", "Flatbuffers", "ZeroMQ", "Docker"],
+    skills: ["C++", "Python", "Tensorflow"],
     link: "https://www.akirakan.com/",
   },
   {
@@ -82,7 +75,7 @@ const experience = [
     description: [
       "Built a desktop application to help non-tech-savvy educators manage and browse teaching materials",
     ],
-    skills: ["Electron.js", "Node.js", "jQuery", "Bootstrap"],
+    skills: ["Electron.js", "Node.js", "Bootstrap"],
     link: "#",
   },
   {
@@ -91,7 +84,7 @@ const experience = [
     description: [
       "Examined the authenticity of financing document using Google Cloud Vision OCR API",
     ],
-    skills: ["Python", "Marvel"],
+    skills: ["Python"],
     link: "https://www.sedaniainnovator.com/",
   },
 ];

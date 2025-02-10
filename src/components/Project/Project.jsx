@@ -4,11 +4,6 @@ import { Box } from "@mui/material";
 
 import ExperienceCard from "../Experience/ExperienceCard";
 
-// DSlabs | Distributed System (Mar 2024 – Current)
-// Create a sharded key-value store with multi-key updates backed with multi-slot Paxos algorithm in Java
-// CourseKata Analysis | DataFest UW 2024 (Mar 2024)
-// Analyzed CourseKata’s data and employed random forest to provide business insights that improve student’s learning experience using R, Python and Tableau in a team of 3; won the Best in Show award.
-
 const project = [
   {
     time: "July 2023 - Present",
@@ -16,14 +11,17 @@ const project = [
     description: [
       "Built and maintain a personal website showcasing employment, achievements, and projects, hosted on GitHub Pages",
     ],
-    skills: [
-      "React",
-      "JavaScript",
-      "Material UI",
-      "MUI System",
-      "Github Pages",
-    ],
+    skills: ["React.js", "JavaScript", "Material UI"],
     link: "#",
+  },
+  {
+    time: "Sep 2024 - Dec 2024",
+    title: "MiniJava Compiler",
+    description: [
+      "Developed a Java compiler with scanning, parsing, semantic analysis, code generation, and profiling",
+    ],
+    skills: ["Java", "x86-64 assembly"],
+    link: "https://courses.cs.washington.edu/courses/cse452/24sp/",
   },
   {
     time: "Mar 2024 - June 2024",

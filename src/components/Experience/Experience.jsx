@@ -22,7 +22,7 @@ const experience = [
       "Assist instruction of Data Visualization (4), Data Structures and Algorithms (1), Browser Engineering (1), and Computer Communication Networks (2) for 8 quarters",
     ],
     skills: ["Python", "Java", "D3.js"],
-    link: "https://courses.cs.washington.edu/courses/cse442/",
+    link: "https://www.cs.washington.edu/academics/teaching-assistants/",
   },
   {
     time: "June 2024 - Sep 2024",
@@ -31,11 +31,11 @@ const experience = [
       "Built a prober that validate clean room service availability across regions. Onboarded view as a new asset in clean room",
     ],
     skills: ["Scala", "Typescript", "Terraform"],
-    link: "https://www.databricks.com/",
+    link: "https://www.databricks.com/product/collaboration/clean-rooms",
   },
   {
     time: "Sep 2023 - June 2024",
-    title: "Undergraduate Research Assistant - User Empowerment Lab",
+    title: "Research Assistant - User Empowerment Lab",
     description: [
       "Developed a social messaging platform and research online conflict behaviors in a team of 3",
     ],

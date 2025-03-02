@@ -21,7 +21,7 @@ const project = [
       "Developed a Java compiler with scanning, parsing, semantic analysis, code generation, and profiling",
     ],
     skills: ["Java", "x86-64 assembly"],
-    link: "https://courses.cs.washington.edu/courses/cse452/24sp/",
+    link: "https://courses.cs.washington.edu/courses/cse401/24au/project/MiniJava.html",
   },
   {
     time: "Mar 2024 - June 2024",
@@ -48,14 +48,14 @@ const project = [
       "Implemented a basic database with catalog management, buffer pool, concurrency control, rollback, and recovery features",
     ],
     skills: ["Java", "SQL"],
-    link: "https://courses.cs.washington.edu/courses/cse444/24wi/",
+    link: "https://gitlab.cs.washington.edu/cse444-24wi/simple-db",
   },
   {
     time: "Sep 2023 - Dec 2023",
     title: "Welp",
     description: ["Created and evaluated a Yelp-like restaurant microservice"],
     skills: ["Go", "Python", "Docker", "Kubernetes", "gRPC"],
-    link: "https://courses.cs.washington.edu/courses/cse453/23au/",
+    link: "https://gitlab.cs.washington.edu/syslab/cse453-welp",
   },
   {
     time: "May 2023 - June 2023",
@@ -116,7 +116,7 @@ const project = [
     title: "Vaccine Scheduler",
     description: ["Designed a command-line vaccination appointment scheduler"],
     skills: ["Python", "MS SQL", "Azure"],
-    link: "https://sites.google.com/cs.washington.edu/cse414-22sp/",
+    link: "https://docs.google.com/document/d/1Nh3HEvLhThoPwwtXtP70V1V-ClmFhVlVqB6gYTG7Yb4/edit?tab=t.0#heading=h.dtltc5xmn7uz",
   },
   {
     time: "Sep 2021 - Dec 2021",
@@ -125,7 +125,7 @@ const project = [
       "Built a toy search engine featuring concurrent networking, file crawling, and disk-backed search query processing",
     ],
     skills: ["C++", "Socket programming", "HTTP", "Boost"],
-    link: "https://courses.cs.washington.edu/courses/cse333/21au/",
+    link: "https://courses.cs.washington.edu/courses/cse333/21au/hw/hw4/hw4.html",
   },
   {
     time: "June 2021 - Aug 2021",

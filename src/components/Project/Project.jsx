@@ -9,10 +9,19 @@ const project = [
     time: "July 2023 - Present",
     title: "Personal Website",
     description: [
-      "Built and maintain a personal website showcasing employment, achievements, and projects, hosted on GitHub Pages",
+      "Built and maintain a personal portfolio website hosted on GitHub Pages",
     ],
     skills: ["React.js", "JavaScript", "Material UI"],
     link: "#",
+  },
+  {
+    time: "Jan 2025 - Mar 2025",
+    title: "FPyDebug",
+    description: [
+      "Built a CLI numerical accuracy profiler that detects floating-point errors and ranks expressions by their impact on function error ",
+    ],
+    skills: ["Python", "Rival"],
+    link: "https://github.com/bksaiki/fpy/tree/archive-fpydebug",
   },
   {
     time: "Sep 2024 - Dec 2024",

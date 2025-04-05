@@ -15,8 +15,7 @@ import useTyping from "../../hooks/useTyping";
 import favicon from "../../img/favicon.png";
 
 const title = "Wei Jun Tan";
-const subtitle =
-  "M.S. in Computer Science and Engineering at University of Washington";
+const subtitle = "Software Enginner at Databricks";
 const paragraph =
   "Tech enthusiast who is passionate about full-stack development, systems programming, and machine learning";
 

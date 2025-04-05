@@ -5,9 +5,9 @@ import { Card, CardContent, Link, Typography } from "@mui/material";
 import useHover from "../../hooks/useHover";
 
 const paragraphs = [
-  "Hello! I am Wei Jun, and I recently graduated with a B.S. in Computer Science and Statistics and am now pursuing a M.S. in Computer Science and Engineering at the University of Washington.",
-  "Back in 2019, I started my journey as a competitive programmer on Codeforces and found my enthusiasm in technology. Fast forward to today, I have had the privilege building software for a Data and AI company, a hybrid cloud corporation, an AI startup, a data collection platform, and an education platform.",
-  "Currently, I have strong interest in full-stack development, systems programming, and machine learning. When I am not at the computer, I enjoy travelling, chess, table tennis, and having movie night.",
+  "Hello! I am Wei Jun — I recently completed my M.S. in Computer Science and Engineering at the University of Washington, where I also earned my B.S. in Computer Science and Statistics. I’m now working as a Software Engineer at Databricks.",
+  "Back in 2019, I began my journey as a competitive programmer on Codeforces and discovered my passion for technology. Fast forward to today, I have had the privilege building software for a Data and AI company, a hybrid cloud corporation, an AI startup, a data collection platform, and an education platform.",
+  "These days, I have strong interest in full-stack development, systems programming, and machine learning. Outside of tech, I enjoy traveling, chess, table tennis, and movie nights.",
 ];
 
 const highlightedWords = [

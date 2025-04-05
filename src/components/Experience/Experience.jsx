@@ -6,6 +6,13 @@ import ExperienceCard from "./ExperienceCard";
 
 const experience = [
   {
+    time: "April 2025 - Current",
+    title: "Software Engineer - Databricks",
+    description: ["Not so much for now :)"],
+    skills: [],
+    link: "https://www.databricks.com/product/collaboration/clean-rooms",
+  },
+  {
     time: "Mar 2023 - Current",
     title: "Research Assistant - Interactive Data Lab",
     description: [
@@ -15,7 +22,7 @@ const experience = [
     link: "https://idl.uw.edu/",
   },
   {
-    time: "Sep 2022 - Current",
+    time: "Sep 2022 - Mar 2025",
     title:
       "Teaching Assistant - Paul G. Allen School of Computer Science and Engineering",
     description: [

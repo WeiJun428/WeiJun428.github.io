@@ -26,7 +26,7 @@ const experience = [
     title:
       "Teaching Assistant - Paul G. Allen School of Computer Science and Engineering",
     description: [
-      "Assist instruction of Data Visualization (4), Data Structures and Algorithms (1), Browser Engineering (1), and Computer Communication Networks (2) for 8 quarters",
+      "Assisted instruction of Data Visualization (4), Data Structures and Algorithms (1), Browser Engineering (1), and Computer Communication Networks (2) for 8 quarters",
     ],
     skills: ["Python", "Java", "D3.js"],
     link: "https://www.cs.washington.edu/academics/teaching-assistants/",
@@ -35,7 +35,7 @@ const experience = [
     time: "June 2024 - Sep 2024",
     title: "Software Engineering Intern - Databricks",
     description: [
-      "Built a prober that validate clean room service availability across regions. Onboarded view as a new asset in clean room",
+      "Built a prober that validate clean room service availability across clouds and shards. Onboarded view as a new asset in clean room",
     ],
     skills: ["Scala", "Typescript", "Terraform"],
     link: "https://www.databricks.com/product/collaboration/clean-rooms",

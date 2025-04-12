@@ -30,7 +30,8 @@ function ExperienceCard({ item }) {
   const currentTitle = useTyping({ text: item.title, enabled: isVisibleOnce });
 
   // Only show arrow after title animation completes
-  const showArrow = isHovered && currentTitle === item.title;
+  const showArrow =
+    isHovered && currentTitle === item.title && item.link !== "#";
 
   return (
     <Link

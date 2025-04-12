@@ -18,7 +18,7 @@ const project = [
     time: "Jan 2025 - Mar 2025",
     title: "FPyDebug",
     description: [
-      "Built a CLI numerical accuracy profiler that detects floating-point errors and ranks expressions by their impact on function error ",
+      "Built a CLI tool that profiles floating-point accuracy, helping debug numerical code by ranking expressions by error contribution.",
     ],
     skills: ["Python", "Rival"],
     link: "https://github.com/bksaiki/fpy/tree/archive-fpydebug",
@@ -118,7 +118,7 @@ const project = [
       "Created an app with alarms and emergency call features to assist people with Alzheimer’s.",
     ],
     skills: ["Java", "Android Studio"],
-    link: "https://courses.cs.washington.edu/courses/cse340/22wi/assignments/final-project.html",
+    link: "https://github.com/WeiJun428/cse340-Remind",
   },
   {
     time: "Mar 2022 - June 2022",
@@ -144,6 +144,24 @@ const project = [
     ],
     skills: ["Java Spring", "TypeScript", "React", "Bootstrap"],
     link: "https://courses.cs.washington.edu/courses/cse331/21su/hw/hw9/hw-campuspaths.html",
+  },
+  {
+    time: "June 2017 - Sep 2017",
+    title: "Twist",
+    description: [
+      "Built an end-to-end paperless receipt system for businesses",
+    ],
+    skills: ["Android Studio", "Java", "MIT App Inventor", "Firebase"],
+    link: "#",
+  },
+  {
+    time: "April 2017 - May 2017",
+    title: "Picam",
+    description: [
+      "Built a motion-activated CCTV system that streams intruder footage to property owner's email",
+    ],
+    skills: ["Python", "Raspberry Pi"],
+    link: "#",
   },
 ];
 

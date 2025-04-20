@@ -33,99 +33,104 @@ function ExperienceCard({ item }) {
   const showArrow =
     isHovered && currentTitle === item.title && item.link !== "#";
 
-  return (
-    <Link
-      href={item.link}
-      underline="none"
-      target={item.link === "#" ? "_self" : "_blank"}
+  const card = (
+    <Card
+      sx={{
+        display: "flex",
+        boxShadow: isHovered ? null : "none",
+        bgcolor: isHovered ? null : "background.default",
+        flexDirection: {
+          xs: "column",
+          md: "row",
+        },
+      }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
-      <Card
+      <CardContent
         sx={{
           display: "flex",
-          boxShadow: isHovered ? null : "none",
-          bgcolor: isHovered ? null : "background.default",
-          flexDirection: {
-            xs: "column",
-            md: "row",
-          },
+          alignItems: "flex-start",
+          width: { xs: 1, md: 3 / 10 },
+          pb: { xs: 0, md: null },
         }}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        onTouchStart={handleTouchStart}
-        onTouchEnd={handleTouchEnd}
       >
-        <CardContent
-          sx={{
-            display: "flex",
-            alignItems: "flex-start",
-            width: { xs: 1, md: 3 / 10 },
-            pb: { xs: 0, md: null },
-          }}
-        >
-          <Typography component="div" variant="subtitle2">
-            {item.time}
-          </Typography>
-        </CardContent>
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "flex-start",
-            flexDirection: "column",
-            width: { xs: 1, md: 7 / 10 },
-          }}
-        >
-          <CardContent
-            sx={{ display: "flex", flexDirection: "column", gap: 2 }}
+        <Typography component="div" variant="subtitle2">
+          {item.time}
+        </Typography>
+      </CardContent>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "flex-start",
+          flexDirection: "column",
+          width: { xs: 1, md: 7 / 10 },
+        }}
+      >
+        <CardContent sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+          <Typography
+            component="div"
+            variant="h2"
+            sx={{ color: isHovered ? "primary.main" : null }}
+            ref={headerRef}
           >
-            <Typography
-              component="div"
-              variant="h2"
-              sx={{ color: isHovered ? "primary.main" : null }}
-              ref={headerRef}
-            >
-              {currentTitle}
-              <Fade in={showArrow}>
-                <Slide
-                  in={showArrow}
-                  direction="up"
-                  container={headerRef.current}
-                >
-                  <ArrowOutwardIcon
-                    fontSize="small"
-                    sx={{
-                      ml: 1,
-                      position: "absolute",
-                    }}
-                  />
-                </Slide>
-              </Fade>
-            </Typography>
-            <Typography variant="body2" color="text.secondary" component="div">
-              {item.description}
-            </Typography>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                gap: 1,
-                flexWrap: "wrap",
-              }}
-            >
-              {item.skills.map((skill) => {
-                return (
-                  <Chip
-                    label={skill}
-                    variant="outlined"
-                    key={skill}
-                    size="small"
-                    color={isHovered ? "primary" : "default"}
-                  />
-                );
-              })}
-            </Box>
-          </CardContent>
-        </Box>
-      </Card>
+            {currentTitle}
+            <Fade in={showArrow}>
+              <Slide
+                in={showArrow}
+                direction="up"
+                container={headerRef.current}
+              >
+                <ArrowOutwardIcon
+                  fontSize="small"
+                  sx={{
+                    ml: 1,
+                    position: "absolute",
+                  }}
+                />
+              </Slide>
+            </Fade>
+          </Typography>
+          <Typography variant="body2" color="text.secondary" component="div">
+            {item.description}
+          </Typography>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "row",
+              gap: 1,
+              flexWrap: "wrap",
+            }}
+          >
+            {item.skills.map((skill) => {
+              return (
+                <Chip
+                  label={skill}
+                  variant="outlined"
+                  key={skill}
+                  size="small"
+                  color={isHovered ? "primary" : "default"}
+                />
+              );
+            })}
+          </Box>
+        </CardContent>
+      </Box>
+    </Card>
+  );
+
+  return item.link === "#" ? (
+    card
+  ) : (
+    <Link
+      href={item.link}
+      target="_blank"
+      underline="none"
+      rel="noopener noreferrer"
+    >
+      {card}
     </Link>
   );
 }

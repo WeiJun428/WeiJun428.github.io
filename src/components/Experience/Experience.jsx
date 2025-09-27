@@ -8,9 +8,11 @@ const experience = [
   {
     time: "April 2025 - Current",
     title: "Software Engineer - Databricks",
-    description: ["Not so much for now :)"],
+    description: [
+      "Building backend systems that power recommendations, marketplace, and clean room",
+    ],
     skills: [],
-    link: "https://www.databricks.com/product/collaboration/clean-rooms",
+    link: "https://www.databricks.com",
   },
   {
     time: "Mar 2023 - Current",

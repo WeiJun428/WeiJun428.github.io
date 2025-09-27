@@ -17,7 +17,7 @@ import favicon from "../../img/favicon.png";
 const title = "Wei Jun Tan";
 const subtitle = "Software Enginner at Databricks";
 const paragraph =
-  "Tech enthusiast who is passionate about full-stack development, systems programming, and machine learning";
+  "From Malaysia to Seattle. Always in code, food, curiosity, and tackling challenges.";
 
 function Header() {
   const {

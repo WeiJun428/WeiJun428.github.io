@@ -5,9 +5,9 @@ import { Card, CardContent, Link, Typography } from "@mui/material";
 import useHover from "../../hooks/useHover";
 
 const paragraphs = [
-  "Hello! I am Wei Jun — I recently completed my M.S. in Computer Science and Engineering at the University of Washington, where I also earned my B.S. in Computer Science and Statistics. I’m now working as a Software Engineer at Databricks.",
-  "Back in 2019, I began my journey as a competitive programmer on Codeforces and discovered my passion for technology. Fast forward to today, I have had the privilege building software for a Data and AI company, a hybrid cloud corporation, an AI startup, a data collection platform, and an education platform.",
-  "These days, I have strong interest in full-stack development, systems programming, and machine learning. Outside of tech, I enjoy traveling, chess, table tennis, and movie nights.",
+  "I'm Wei Jun — a software engineer at Databricks focused on backend systems that power large-scale data and AI products. My work often lives at the intersection of performance, reliability, and new feature development.",
+  "My journey started in competitive programming on Codeforces — not the most typical entry point, but one that sparked my passion for tech. From there, I grew through academic research and diverse internships during my 5 years at University of Washington.",
+  "Outside of tech, you’ll find me exploring new hiking trails, playing chess or ping pong, or chasing down great food — though I’ll argue Malaysia still has the best in the world.",
 ];
 
 const highlightedWords = [
@@ -24,40 +24,43 @@ const highlightedWords = [
     link: "https://codeforces.com/",
   },
   {
-    text: "Data and AI company",
+    text: "Databricks",
     link: "https://www.databricks.com/",
   },
   {
-    text: "hybrid cloud corporation",
-    link: "https://www.nutanix.com/",
-  },
-  {
-    text: "AI startup",
-    link: "https://www.akirakan.com/",
-  },
-  {
-    text: "data collection platform",
-    link: "https://getodk.org/",
-  },
-  {
-    text: "education platform",
-    link: "#",
+    text: "Malaysia",
+    link: "https://www.google.com/search?q=Best+food+in+malaysia",
   },
 ];
 
-const highlightParagraph = (paragraph, isHovered) => {
-  let ret = paragraph;
-  highlightedWords.forEach((word) => {
-    ret = ret.replaceAll(word.text, `HIGHLIGHT[${JSON.stringify(word)}]`);
-  });
+// Utility to escape regex special chars
+const escapeRegExp = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
-  const outputArray = ret.split(/(HIGHLIGHT\[[^\]]+\])/).map((part) => {
-    if (part.startsWith("HIGHLIGHT[")) {
-      const obj = JSON.parse(part.slice(10, -1));
-      return (
+const highlightParagraph = (paragraph, isHovered) => {
+  if (!highlightedWords?.length) return paragraph;
+
+  // Build regex that matches any highlighted word text
+  const regex = new RegExp(
+    highlightedWords.map((w) => escapeRegExp(w.text)).join("|"),
+    "g",
+  );
+
+  const parts = [];
+  let lastIndex = 0;
+
+  paragraph.replace(regex, (match, offset) => {
+    // push preceding plain text
+    if (lastIndex < offset) {
+      parts.push(paragraph.slice(lastIndex, offset));
+    }
+
+    // find the word metadata
+    const word = highlightedWords.find((w) => w.text === match);
+    if (word) {
+      parts.push(
         <Link
-          href={obj.link}
-          key={obj.text}
+          href={word.link}
+          key={`${word.text}-${offset}`}
           underline="hover"
           target="_blank"
           color={isHovered ? "primary" : "unset"}
@@ -67,14 +70,21 @@ const highlightParagraph = (paragraph, isHovered) => {
             transition: "400ms",
           }}
         >
-          {obj.text}
-        </Link>
+          {word.text}
+        </Link>,
       );
     }
-    return part;
+
+    lastIndex = offset + match.length;
+    return match;
   });
 
-  return outputArray;
+  // push remaining tail
+  if (lastIndex < paragraph.length) {
+    parts.push(paragraph.slice(lastIndex));
+  }
+
+  return parts;
 };
 
 function About() {

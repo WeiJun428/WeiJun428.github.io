@@ -13,11 +13,14 @@ function App() {
   return (
     <Box
       sx={{
-        py: 6,
-        px: {
+        py: {
           xs: 3,
           sm: 6,
-          md: 12,
+        },
+        px: {
+          xs: 1.5,
+          sm: 3,
+          md: 6,
           xl: 18,
         },
         display: "flex",

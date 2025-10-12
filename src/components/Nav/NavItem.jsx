@@ -19,7 +19,7 @@ export default function NavItem({ content, onClick, selected }) {
       href={content.link}
       key={content.label}
       underline="none"
-      sx={{ color: active ? "primary" : "text.secondary", my: "1rem" }}
+      sx={{ color: selected ? "primary" : "text.secondary", my: "1rem" }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onTouchStart={handleTouchStart}
@@ -30,8 +30,10 @@ export default function NavItem({ content, onClick, selected }) {
       <Divider
         sx={{
           height: 1,
-          width: active ? "5rem" : "0.2rem",
-          borderBottom: "3px solid",
+          width: active ? "5rem" : "0",
+          borderBottomWidth: "3px",
+          borderBottomStyle: "solid",
+          borderBottomColor: selected ? "primary.main" : "text.secondary",
           opacity: 0.7,
           mr: "1rem",
           transition: "width 200ms ease-in",

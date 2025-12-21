@@ -30,12 +30,14 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "gh-pages": "^5.0.0",
     "prettier": "^3.0.0",
+    "react-snap": "^1.23.0",
     "stylelint": "^15.10.2",
     "stylelint-config-standard": "^34.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",

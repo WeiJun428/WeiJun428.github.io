@@ -6,6 +6,15 @@ import ExperienceCard from "../Experience/ExperienceCard";
 
 const project = [
   {
+    time: "Dec 2025",
+    title: "BricksterReview",
+    description: [
+      "Built a browser extension that delivers an LLM-powered, interactive pull request review experience on GitHub",
+    ],
+    skills: ["JavaScript", "Python", "FastAPI"],
+    link: "#",
+  },
+  {
     time: "July 2023 - Present",
     title: "Personal Website",
     description: [

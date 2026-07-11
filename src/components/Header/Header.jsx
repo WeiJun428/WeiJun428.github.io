@@ -15,7 +15,7 @@ import useTyping from "../../hooks/useTyping";
 import favicon from "../../img/favicon.png";
 
 const title = "Wei Jun Tan";
-const subtitle = "Software Enginner at Databricks";
+const subtitle = "Software Engineer at Databricks";
 const paragraph =
   "From Malaysia to Seattle. Always in code, food, curiosity, and tackling challenges.";
 

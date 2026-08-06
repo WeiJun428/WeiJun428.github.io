@@ -24,11 +24,15 @@ const getTheme = (mode) => {
             }
           : {
               background: {
-                default: "#121212",
-                paper: "#202020",
+                default: "#1b1d22",
+                paper: "#252830",
               },
               primary: {
                 main: red[300],
+              },
+              text: {
+                primary: "#e8eaed",
+                secondary: "#a7adb7",
               },
             }),
       },
